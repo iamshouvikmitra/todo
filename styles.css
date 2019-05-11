@@ -1,0 +1,80 @@
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+div{
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+ul{
+    list-style: none;
+    padding: 10px;
+    min-height: 40vh;
+    max-height: 75vh;
+    overflow: scroll;
+    margin: 15px;
+    background-color: rgb(222, 233, 235);
+}
+
+ul::-webkit-scrollbar{
+    width: 5px !important;
+}
+ul::-webkit-scrollbar-thumb{
+    background: #545454
+}
+
+li{
+    cursor: pointer;
+    text-decoration: none;
+    margin: 15px 5px;
+}
+
+li::before{
+    content: "🎉";
+    padding-right: 2%;
+}
+
+#demo{
+    text-align: center;
+    position: relative;
+    padding-top: 8%;
+    color: rgba(0, 0, 0, 0.767) 
+}
+
+#controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 90%;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: rgb(52, 133, 204);
+    border: 0ch;
+    color: white;
+    box-shadow: 5px 5px black;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.815)
+}
+
+button{
+    width: 100%;
+    padding: 15px 20px;
+    margin: 15px 0px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: aqua;
+}
+
+@media (min-width: 600px){
+    button{
+        display : none;
+    }
+}

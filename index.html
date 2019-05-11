@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple TODO - Create & Share Listicles with others!</title>
+    <script src="./script.js"></script>
+    <script src="./lzma.js"></script>
+    <script src="./lzma_worker.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <ul id="todos">
+            <div id="demo" >Your task will show up here 🎉</div>
+        </ul>
+        <div id="controls">
+            <input type="text" placeholder="type something and press enter" name="todo" id="todo" onchange="addTodo()"
+                autofocus="true">
+        </div>
+        <center>
+            <div style="font-size:1rem; margin-top: 5px;">
+                Made with ❤️ by Shouvik Mitra
+            </div>
+        </center>
+    </div>
+</body>
+
+</html>
